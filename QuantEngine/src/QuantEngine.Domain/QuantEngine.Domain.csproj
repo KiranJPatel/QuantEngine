@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <!-- DataAnnotations attributes on Options classes ([Range], [Required], etc.) -->
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.*" />
+  </ItemGroup>
+</Project>

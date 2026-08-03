@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\QuantEngine.Domain\QuantEngine.Domain.csproj" />
+    <PackageReference Include="Microsoft.Data.Sqlite"                      Version="8.*" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions"  Version="8.*" />
+    <PackageReference Include="Microsoft.Extensions.Options"               Version="8.*" />
+    <PackageReference Include="Microsoft.Extensions.Http"                  Version="8.*" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="8.*" />
+  </ItemGroup>
+</Project>

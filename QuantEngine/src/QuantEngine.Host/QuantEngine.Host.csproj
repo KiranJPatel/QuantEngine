@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>QuantEngine</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuantEngine.Domain\QuantEngine.Domain.csproj" />
+    <ProjectReference Include="..\QuantEngine.Indicators\QuantEngine.Indicators.csproj" />
+    <ProjectReference Include="..\QuantEngine.Strategy\QuantEngine.Strategy.csproj" />
+    <ProjectReference Include="..\QuantEngine.Risk\QuantEngine.Risk.csproj" />
+    <ProjectReference Include="..\QuantEngine.Backtesting\QuantEngine.Backtesting.csproj" />
+    <ProjectReference Include="..\QuantEngine.Infrastructure\QuantEngine.Infrastructure.csproj" />
+    <ProjectReference Include="..\QuantEngine.Trading\QuantEngine.Trading.csproj" />
+    <ProjectReference Include="..\QuantEngine.Reporting\QuantEngine.Reporting.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Hosting"                  Version="8.*" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json"       Version="8.*" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="8.*" />
+    <PackageReference Include="Serilog.Extensions.Hosting"                    Version="8.*" />
+    <PackageReference Include="Serilog.Sinks.Console"                         Version="5.*" />
+    <PackageReference Include="Serilog.Sinks.File"                            Version="5.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appsettings.json"            CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="appsettings.Production.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="universe.json"               CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
