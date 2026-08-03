@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <!-- Tests intentionally DON'T treat warnings as errors — allow test-only flexibility -->
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\QuantEngine.Domain\QuantEngine.Domain.csproj" />
+    <ProjectReference Include="..\..\src\QuantEngine.Indicators\QuantEngine.Indicators.csproj" />
+    <ProjectReference Include="..\..\src\QuantEngine.Strategy\QuantEngine.Strategy.csproj" />
+    <ProjectReference Include="..\..\src\QuantEngine.Risk\QuantEngine.Risk.csproj" />
+    <ProjectReference Include="..\..\src\QuantEngine.Backtesting\QuantEngine.Backtesting.csproj" />
+    <ProjectReference Include="..\..\src\QuantEngine.Trading\QuantEngine.Trading.csproj" />
+    <PackageReference Include="xunit"                       Version="2.*" />
+    <PackageReference Include="xunit.runner.visualstudio"  Version="2.*" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk"     Version="17.*" />
+    <PackageReference Include="FluentAssertions"            Version="6.*" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.*" />
+    <PackageReference Include="Microsoft.Extensions.Options"               Version="8.*" />
+  </ItemGroup>
+</Project>
